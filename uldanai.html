@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamBer - Студенттерге арналған көмек</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Жалпы стильдер */
+    body {
+      font: 1em/1.4 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Меню */
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 10px;
+    }
+    .menu a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+    .menu a:hover {
+      background-color: #f5f5f5;
+    }
+    .menu a:last-child {
+      border-bottom: none;
+    }
+    .menu-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .menu-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Бөлімдер */
+    section {
+      padding: 20px;
+      margin: 20px 0;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Батырмалар */
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #218838;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>TeamBer - Студенттерге арналған көмек</h1>
+      <p>TeamBer платформасында студенттерге түрлі қызметтер көрсетіледі.</p>
+      <button class="menu-btn" onclick="toggleMenu()">Меню</button>
+      <div class="menu">
+        <a href="services.html">Қызметтер</a>
+        <a href="#feedback">Пікірлер</a>
+        <a href="#offer-your-skill">Өз қабілетіңізді ұсыныңыз</a>
+        <a href="#contact">Байланыс</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Басты бет мазмұны -->
+  <section>
+    <h2>Басты бет</h2>
+    <p>TeamBer - студенттердің бір-біріне көмектесуі мен өз қабілеттерін дамытуына арналған платформа.</p>
+    <a href="services.html" class="btn">Қызметтерді көру</a>
+  </section>
+
+  <!-- Өз қабілетіңізді ұсыныңыз -->
+  <section id="offer-your-skill">
+    <h2>Өз қабілетіңізді ұсыныңыз</h2>
+    <p>Қабілетіңіз арқылы ақша табыңыз! Табыс көзінің <strong>80%</strong> сізге тиесілі, <strong>20%</strong> платформа комиссиясы ретінде сақталады.</p>
+    <a href="https://wa.me/77076174065?text=Өз%20қабілетімді%20ұсынғым%20келеді" target="_blank" class="btn">Қабілетіңізді ұсыныңыз</a>
+  </section>
+
+  <!-- Пікірлер -->
+  <section id="feedback">
+    <h2>Пікірлер</h2>
+    <p>Сайт туралы ойыңыз немесе ұсынысыңыз бар ма? Telegram арнамызға пікір қалдырыңыз:</p>
+    <a href="https://t.me/teamber_otziv" target="_blank" class="btn">Telegram-ға өту</a>
+  </section>
+
+  <!-- Байланыс -->
+  <section id="contact">
+    <h2>Байланыс</h2>
+    <p>Instagram арқылы бізбен байланысыңыз:</p>
+    <a href="https://www.instagram.com/teamber_sd/profilecard/?igsh=eWRrcGgza3EyZTUy" target="_blank" class="btn">Instagram-ға өту</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 TeamBer. Барлық құқықтар қорғалған.</p>
+  </footer>
+
+</body>
+</html>
